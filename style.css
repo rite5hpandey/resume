@@ -1,0 +1,444 @@
+/* body header */
+#body-header {
+    height: 65vh;
+    background-image: url(header-bag.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    background-attachment: fixed;
+}
+
+/* horizontal list */
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.horizontal-list li a {
+    color: aliceblue;
+    margin: 0px 8px 8px 0px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.horizontal-list a:hover {
+    color: #DFDBDA;
+}
+
+.nav li a:hover {
+    border-bottom: 1px solid #DFDBDA;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* name and social-container */
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-icons li img {
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.social-icons li img:hover {
+    box-shadow: 0px 0px 3px 2px rgba(230, 196, 196, 0.6);
+    
+}
+
+/* about-section */
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 500;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -11vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid aliceblue;
+    box-shadow: 0px 0px 3px 2px aliceblue;
+}
+
+#my-image img:hover {
+    height: 105%;
+    width: 105%;
+}
+
+#blue{
+    color: #2857a4;
+}
+#about-text h2>span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* skills-section */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Changing background color of the skills section to azureblue */
+section:nth-child(2n) {
+    background-color: white;
+}
+
+section:nth-child(2n+1) {
+    background-color: lightgrey;
+}
+
+/* Adding specific background color for the skills section */
+#skills-section {
+    background-color: azureblue !important;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 15rem;
+    height: 2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: start;
+    margin: 15px;
+    vertical-align: middle;
+}
+
+/* common-margin-classes */
+.mb75px {
+    margin-bottom: 75px;;
+}
+
+/* common-color-classes */
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+/* setting background-color */
+.m-blue {
+    color: #2857a4;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+/* Percentage Classes */
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+
+/* Portfolio Section */
+#portfolio-container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure items are in a single row */
+    justify-content: center; /* Align items to the start of the container */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    background-color: lightgrey;
+}
+
+.portfolio-image-container {
+    flex: 0 0 auto; /* Prevent items from shrinking or growing */
+    max-width: 300px;
+    overflow: hidden;
+    margin: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.5s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for image fade-out */
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; /* Ensure details take up the full container */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background for better text visibility */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    opacity: 1; /* Show details on hover */
+}
+
+.portfolio-image-container:hover img {
+    opacity: 0; /* Hide image on hover */
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 30px #74ADC8;
+}
+
+
+
+
+/* Contact Section */
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Added gap between elements */
+    padding: 20px;
+}
+
+#my-details-container {
+    width: 45%;
+    max-width: 300px;
+    margin: 5px;
+    text-align: left;
+    border: 1px solid white; /* White border around container */
+    padding: 15px; /* Added padding for spacing */
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#bold{
+    color: white;
+    text-decoration: solid;
+    font-weight: 400;
+}
+
+#contact-form-container {
+    width: 45%;
+    max-width: 400px;
+    margin: 10px;
+    text-align: left;
+    border: 1px solid white; /* White border around container */
+    padding: 15px; /* Added padding for spacing */
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+.my-details-info-container span:hover{
+    text-decoration: underline;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 10px; /* Increased padding */
+    border: 1px solid white; /* White border around input fields */
+    color: #d9dcdd;
+    background: transparent;
+    width: calc(100% - 22px); /* Adjusted width to fit borders */
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin: 15px auto 0;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+    display: block;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons {
+    margin-top: 20px;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Contact Section Email Link */
+#contact .my-details-info-container a {
+    color: white;
+    text-decoration: none; /* Remove underline from link */
+    font-weight: 400; /* Adjust font weight if needed */
+}
+
+#contact .my-details-info-container a:hover {
+    text-decoration: underline; /* Optional: underline on hover for better accessibility */
+}

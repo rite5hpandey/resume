@@ -99,8 +99,11 @@
     position: relative;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333; /* Darker text color for better readability */
+    padding: 40px 20px; /* Padding for better spacing */
 }
 
 #my-image {
@@ -115,7 +118,7 @@
     width: 100%;
     border-radius: 50%;
     border: 3px solid aliceblue;
-    box-shadow: 0px 0px 3px 2px aliceblue;
+    box-shadow: 0 0 3px 2px aliceblue;
 }
 
 #my-image img:hover {
@@ -123,15 +126,34 @@
     width: 105%;
 }
 
-#blue{
+#blue {
     color: #2857a4;
 }
-#about-text h2>span{
+
+#about-text {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the paragraph */
+    font-weight: 700;
+}
+
+#about-text h2 > span {
     font-size: 40px;
     color: #2857a4;
     display: inline-block;
     padding-top: 10px;
     margin-right: 0.5rem;
+    text-align: center;
+}
+
+#about-text p {
+    font-size: 1.1rem; /* Slightly increase font size for readability */
+    line-height: 1.8; /* Increase line height for better spacing */
+    color: #444; /* Softer text color */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+#about-text p strong {
+    color: #2857a4; /* Highlight strong text */
 }
 
 /* skills-section */

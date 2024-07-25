@@ -40,6 +40,8 @@
 .text-center {
     text-align: center;
 }
+
+
 /* resume button */
 .resume button {
     height: fit-content;
@@ -92,6 +94,8 @@
     
 }
 
+
+
 /* about-section */
 #about {
     height: auto;
@@ -110,7 +114,7 @@
     height: 12rem;
     width: 12rem;
     margin: auto;
-    margin-top: -11vh;
+    margin-top: -17vh;
 }
 
 #my-image img {
@@ -135,6 +139,7 @@
     margin: 0 auto; /* Center the paragraph */
     font-weight: 700;
 }
+
 
 #about-text h2 > span {
     font-size: 40px;
@@ -172,6 +177,7 @@ section:nth-child(2n) {
 section:nth-child(2n+1) {
     background-color: lightgrey;
 }
+
 
 /* Adding specific background color for the skills section */
 #skills-section {
@@ -288,7 +294,7 @@ section:nth-child(2n+1) {
 
 .portfolio-image-container {
     flex: 0 0 auto; /* Prevent items from shrinking or growing */
-    max-width: 300px;
+    max-width: 370px;
     overflow: hidden;
     margin: 20px;
     background-size: cover;

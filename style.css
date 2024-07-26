@@ -97,9 +97,11 @@
 }
 .section-heading {
     width: auto;
-    padding: 20px 10px 10px;
+    padding: 40px 10px 10px;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    margin: 0;
 }
 
 .section-heading span {
@@ -113,30 +115,50 @@
 
 
 /* about-section */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+/* Image Styles */
+#my-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: -12vh; /* Adjust this value if needed */
+}
+
 /* Responsive adjustments for About section */
 @media only screen and (max-width: 768px) {
     /* Adjust the top margin for the about section on smaller screens */
     #about {
-        margin-top: 20vh; /* Adjust this value as needed */
+        margin-top: 30vh; /* Adjust this value as needed */
     }
 
     /* Ensure the About heading stays in the right place */
     .section-heading {
         margin-top: 0;
-        padding-top: 20px;
+        padding-top: 40px; /* Increased padding */
     }
 
     /* Adjust the image margin for smaller screens */
     #my-image {
-        margin-top: -12vh; /* Adjust this value as needed */
+        margin-top: 0; /* Adjust this value as needed */
     }
 }
 
+
 #about {
+    position: relative;
+    margin-top: 0vh; /* Increased margin */
+    text-align: center;
     min-height: auto;
     min-width: 100%;
-    position: relative;
-    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
     font-weight: 400;

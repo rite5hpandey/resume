@@ -42,6 +42,7 @@
 }
 
 
+
 /* resume button */
 .resume button {
     height: fit-content;
@@ -92,6 +93,20 @@
 .social-icons li img:hover {
     box-shadow: 0px 0px 3px 2px rgba(230, 196, 196, 0.6);
     
+}
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
 }
 
 
@@ -175,7 +190,7 @@ section:nth-child(2n) {
 }
 
 section:nth-child(2n+1) {
-    background-color: lightgrey;
+    background-color: rgba(218, 225, 227, 0.696);
 }
 
 
@@ -184,20 +199,7 @@ section:nth-child(2n+1) {
     background-color: azureblue !important;
 }
 
-.section-heading {
-    width: auto;
-    padding: 20px 10px 10px;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-.section-heading span {
-    font-size: 40px;
-    color: #2857a4;
-    display: inline-block;
-    padding-top: 10px;
-    margin-right: 0.5rem;
-}
 
 .skills-display {
     width: 75%;
@@ -289,7 +291,7 @@ section:nth-child(2n+1) {
     flex-wrap: wrap; /* Ensure items are in a single row */
     justify-content: center; /* Align items to the start of the container */
     overflow-x: auto; /* Enable horizontal scrolling if needed */
-    background-color: lightgrey;
+    
 }
 
 .portfolio-image-container {
@@ -340,6 +342,85 @@ section:nth-child(2n+1) {
 }
 
 
+/*work section and education section*/
+.timeline{
+    position: relative;
+    width:75%;
+   
+    margin-bottom: auto;
+    
+}
+
+.timeline-box{
+    position: relative;
+    margin:5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    background-color: white;
+    margin-bottom: 5%;
+    padding: 1%;
+    color: rgb(106, 100, 100);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.timeline-box:nth-child(2n){
+    left:55%;
+    text-align: left;
+}
+.timeline-box:nth-child(2n+1){
+    text-align: right;
+    width: 30%;
+    left: 15%;
+}
+.box-heading{
+    color:#2857a4 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.institute{
+    color: rgb(204, 111, 23);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -14.5%;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: rgb(204, 111, 23);
+    z-index: 1;
+    
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: rgb(204, 111, 23);
+    z-index: 1;
+    
+}
+.timeline-divider{
+    position:absolute;
+    height: 75%;
+    width:0;
+    border: 2px dashed #2857a4;;
+    top:9%;
+    left:51.5%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+    
+}
 
 
 /* Contact Section */

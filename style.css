@@ -1,7 +1,8 @@
 /* body header */
 #body-header {
-    height: 65vh;
     background-image: url(header-bag.jpg);
+    min-height: 65vh;
+    min-width: 100%;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
@@ -113,8 +114,8 @@
 
 /* about-section */
 #about {
-    height: auto;
-    width: 100%;
+    min-height: auto;
+    min-width: 100%;
     position: relative;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -178,7 +179,7 @@
 
 /* skills-section */
 section {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,7 +203,7 @@ section:nth-child(2n+1) {
 
 
 .skills-display {
-    width: 75%;
+    min-width: 75%;
     padding: 10px;
     margin-bottom: 150px;
     display: flex;
@@ -362,6 +363,7 @@ section:nth-child(2n+1) {
     padding: 1%;
     color: rgb(106, 100, 100);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: content-box;
 }
 
 .timeline-box:nth-child(2n){
@@ -421,6 +423,7 @@ section:nth-child(2n+1) {
     z-index: 2;
     
 }
+
 
 
 /* Contact Section */
@@ -591,7 +594,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px 0;
     position: static;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
 }
 

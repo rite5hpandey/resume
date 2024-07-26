@@ -1,4 +1,7 @@
 /* body header */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #body-header {
     background-image: url(header-bag.jpg);
     min-height: 65vh;

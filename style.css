@@ -113,6 +113,25 @@
 
 
 /* about-section */
+/* Responsive adjustments for About section */
+@media only screen and (max-width: 768px) {
+    /* Adjust the top margin for the about section on smaller screens */
+    #about {
+        margin-top: 20vh; /* Adjust this value as needed */
+    }
+
+    /* Ensure the About heading stays in the right place */
+    .section-heading {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
+    /* Adjust the image margin for smaller screens */
+    #my-image {
+        margin-top: -12vh; /* Adjust this value as needed */
+    }
+}
+
 #about {
     min-height: auto;
     min-width: 100%;

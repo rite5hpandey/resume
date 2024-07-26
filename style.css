@@ -2,6 +2,13 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+@media  screen and (max-width:1000px){
+    #media-query{
+        width:100%;
+    }
+}
+    
+
 #body-header {
     background-image: url(header-bag.jpg);
     min-height: 65vh;
@@ -348,6 +355,7 @@ section:nth-child(2n+1) {
 
 
 /*work section and education section*/
+
 .timeline{
     position: relative;
     width:75%;
@@ -361,13 +369,14 @@ section:nth-child(2n+1) {
     margin:5px;
     width: 40%;
     left: 5%;
-    min-height: 150px;
+    min-height:30%;
     background-color: white;
     margin-bottom: 5%;
     padding: 1%;
     color: rgb(106, 100, 100);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: content-box;
+    overflow-wrap: anywhere;
 }
 
 .timeline-box:nth-child(2n){
@@ -427,6 +436,32 @@ section:nth-child(2n+1) {
     z-index: 2;
     
 }
+@media screen and (max-width:600px){
+    .timeline-divider{
+        left:5%;
+        top: 13%;
+    }
+    .timeline-box{
+        left:12% !important;
+        min-width: 80%;
+    }
+    .timeline-box:nth-child(2n)::after{
+        left: -11% ;
+
+    }
+.timeline-box:nth-child(2n+1)::after{
+    left: -11%;
+}
+.timeline-box:nth-child(2n){
+    width: 80%;
+    text-align: left;
+}
+.timeline-box:nth-child(2n+1){
+   
+    text-align: left;
+}
+}
+
 
 
 

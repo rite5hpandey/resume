@@ -496,12 +496,12 @@ section:nth-child(2n+1) {
 }
 
 #my-details-container {
-    width: 45%;
-    max-width: 300px;
-    margin: 5px;
+    max-width: 45%;
+    margin: 3%;
     text-align: left;
     border: 1px solid white; /* White border around container */
     padding: 15px; /* Added padding for spacing */
+    word-wrap: break-word;
 }
 
 #my-details-container h3 {
@@ -517,10 +517,11 @@ section:nth-child(2n+1) {
 }
 
 #contact-form-container {
-    width: 45%;
-    max-width: 400px;
-    margin: 10px;
+    max-width: 45%;
+    
+    margin: 3%;
     text-align: left;
+    word-wrap: break-word;
     border: 1px solid white; /* White border around container */
     padding: 15px; /* Added padding for spacing */
 }
@@ -561,7 +562,7 @@ section:nth-child(2n+1) {
 textarea {
     max-width: 90%;
     margin: 15px;
-    padding: 10px; /* Increased padding */
+    padding: 1%; /* Increased padding */
     border: 1px solid white; /* White border around input fields */
     color: #d9dcdd;
     background: transparent;
@@ -592,14 +593,14 @@ textarea {
 }
 
 #contact .social-icons {
-    margin-top: 20px;
+    margin-top: 3%;
     
 }
 
 #contact .social-icons li a i {
     font-size: 1.5rem;
-    margin: 40px 10px 10px;
-    padding: 10px 14px 20px 10px;
+    margin: 4% 1% 1%;
+    padding: 5% 7% 10% 5%;
     
     
 }

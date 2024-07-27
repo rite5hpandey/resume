@@ -636,7 +636,7 @@ footer {
     text-decoration: underline;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:700px){
     .timeline-divider{
         left:5%;
         top: 13%;
@@ -687,7 +687,7 @@ footer {
 #body-header {
     background-image: url(header-bag.jpg);
     min-height: 65vh;
-    min-width: 110vw;
+    min-width: 107vw;
     background-size: cover;
     background-position: center;
     opacity: 0.9;
@@ -746,7 +746,7 @@ footer {
     padding: 1rem;
 }
 section {
-    width: 105vw;
+    width: 110vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -790,7 +790,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px 0;
     position: static;
-    width: 105vw;
+    width: 110vw;
     bottom: 0;
 }
 }

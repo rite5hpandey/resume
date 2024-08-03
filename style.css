@@ -18,8 +18,56 @@
     opacity: 0.9;
     background-attachment: fixed;
 }
-
+.dropdown{
+    display: none;
+}
 /* horizontal list */
+.horizontal-list-nav {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 1vw;
+}
+
+.horizontal-list-nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.horizontal-list-nav li a {
+    color: aliceblue;
+    margin: 0px 8px 8px 0px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.horizontal-list-nav a:hover {
+    color: #DFDBDA;
+}
+.horizontal-list-icon {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 1vw;
+}
+
+.horizontal-list-icon li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.horizontal-list-icon li a {
+    color: aliceblue;
+    margin: 0px 8px 8px 0px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.horizontal-list-icon a:hover {
+    color: #DFDBDA;
+}
 .horizontal-list {
     list-style: none;
     padding-left: 1rem;
@@ -637,6 +685,68 @@ footer {
 }
 
 @media screen and (max-width:700px){
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        margin-top: 3vh;
+    }
+    
+    .dropdown-content {
+        display: none; /* Hide the dropdown by default */
+        position: absolute;
+        background-color:lightgray;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .dropdown-content ul li {
+        padding: 8px 12px;
+    }
+    
+    .dropdown-content ul li a {
+        color: black;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content ul li a:hover {
+        background-color: #ddd;
+    }
+    
+    /* Toggle the dropdown content on click */
+    .dropdown-toggle:focus + .dropdown-content,
+    .dropdown-content:hover {
+        display: block;
+    }
+    
+    .dropdown-toggle {
+        cursor: pointer;
+        height: fit-content;
+        width: fit-content;
+        color: antiquewhite;
+        align-items: center;
+        margin-left: 93vw;
+        background-color: transparent;
+        border: 2px solid antiquewhite;
+        padding: 0.3vh 1.5vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+    
+   
+.horizontal-list-nav li {
+    display: none;
+    
+}
     .timeline-divider{
         left:5%;
         top: 13%;
@@ -666,7 +776,7 @@ footer {
     color: antiquewhite;
     align-items: center;
     margin-left: 37%;
-    margin-top: 0%;
+    margin-top: 10%;
     background-color: transparent; /* Set the initial background to transparent */
     border: 2px solid antiquewhite; /* Add a border to the button */
     padding: 10px 20px; /* Add some padding for better appearance */

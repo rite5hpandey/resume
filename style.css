@@ -721,9 +721,11 @@ footer {
     }
     
     /* Toggle the dropdown content on click */
-    .dropdown-toggle:focus + .dropdown-content,
+    .dropdown-toggle:focus+ .dropdown-content,
     .dropdown-content:hover {
         display: block;
+        margin-left:90vw ;
+        margin-top: 1vh;
     }
     
     .dropdown-toggle {
